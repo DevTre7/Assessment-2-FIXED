@@ -85,10 +85,14 @@ console.log("------------------------------------------");
     Name your new function `canWeDeliverTwo`.
 */
 
-function canWeDeliverTwo(){
-    
-}
+function canWeDeliverTwo(zipCode2){
+    console.log(deliveryAreaZipCodes.includes(zipCode2))
+};
 
+canWeDeliverTwo(85205);
+console.log("------------------------------------------");
+canWeDeliverTwo(12345);
+console.log("------------------------------------------");
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
@@ -122,7 +126,11 @@ const deals = [
     to replace the 15 with a 10.
 */
 
-//CODE HERE
+console.log(deals);
+console.log("------------------------------------------");
+const newDeals1 = deals.replace("15% Off!", "10% Off!")
+console.log(newDeal1);
+console.log("------------------------------------------");
 
 
 
