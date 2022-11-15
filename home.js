@@ -135,12 +135,10 @@ console.log("------------------------------------------");
 
 // use a for loop on  deals array 
 const newDeals1 = deals;
-const daily = deals[0].title.replace("15% Off!", "10% Off!")
-newDeals1[0].title = daily;
+const discount = deals[0].title.replace("15% Off!", "10% Off!")
+newDeals1[0].title = discount;
 console.log(newDeals1);
 console.log("------------------------------------------");
-
-
 
 /*
     The restaurant is going to continue its
@@ -155,4 +153,10 @@ console.log("------------------------------------------");
     to be displaying wrong on the live site.
 */
 
-//CODE HERE
+////???????? Don't knmow why my replace() method is not working on the object array???!!!!
+
+console.log(newDeals1);
+const month = deals[7].desc.replace("March", "April");
+newDeals1[7].desc = month;
+console.log(newDeals1);
+console.log("------------------------------------------");
