@@ -117,6 +117,7 @@ const deals = [
     }
 ]
 
+
 /*
     The owner has decided to take the 15% off
     deal down to 10%.
@@ -128,9 +129,15 @@ const deals = [
 
 console.log(deals);
 console.log("------------------------------------------");
+console.log(deals[0].title);
+console.log("------------------------------------------");
 ////???Don't know why the "replace()" array function is NOT working is not working on the deals array"
-const newDeals1 = deals.replace("15% Off!", "10% Off!")
-console.log(newDeal1);
+
+// use a for loop on  deals array 
+const newDeals1 = deals;
+const daily = deals[0].title.replace("15% Off!", "10% Off!")
+newDeals1[0].title = daily;
+console.log(newDeals1);
 console.log("------------------------------------------");
 
 
