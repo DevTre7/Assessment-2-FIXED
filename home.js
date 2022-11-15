@@ -128,6 +128,7 @@ const deals = [
 
 console.log(deals);
 console.log("------------------------------------------");
+////???Don't know why the "replace()" array function is NOT working is not working on the deals array"
 const newDeals1 = deals.replace("15% Off!", "10% Off!")
 console.log(newDeal1);
 console.log("------------------------------------------");
