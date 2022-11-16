@@ -93,6 +93,15 @@ canWeDeliverTwo(85205);
 console.log("------------------------------------------");
 canWeDeliverTwo(12345);
 console.log("------------------------------------------");
+
+//DJ's alternative 
+const canWeDeliverThree = zip => {
+    const filteredZip = deliveryAreaZipCodes.filter(code > code === zip)
+                        //"If" expression                               "else" expression
+    filteredZip.length > 0 ? console.log("You're in the delivery zone!") : console.log("Sorry, we cannot deliver it to you. ");
+}
+
+console.log(canWeDeliverThree(85205));
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
@@ -117,7 +126,6 @@ const deals = [
     }
 ]
 
-
 /*
     The owner has decided to take the 15% off
     deal down to 10%.
@@ -139,7 +147,10 @@ const discount = deals[0].title.replace("15% Off!", "10% Off!")
 newDeals1[0].title = discount;
 console.log(newDeals1);
 console.log("------------------------------------------");
+///DJ's solution:
 
+deals[1].desc = deals[1].desc.trim().replace("March", "April");
+console.log(de)
 /*
     The restaurant is going to continue its
     family deal for another month. 

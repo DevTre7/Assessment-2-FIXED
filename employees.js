@@ -20,7 +20,7 @@
 */
 
 //CODE HERE
-
+class Employee {}
 
 
 /*

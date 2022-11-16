@@ -30,9 +30,15 @@
     'kids'
 */
 
-//CODE HERE
-
-
+const pizza = {
+    name: "Margerita Pizza", 
+    price: 30,
+    category: "Entree",
+    popularity: 2,
+    Rating: 5,
+    tags: ["gluten-free","organic cauliflower crust", "non-dairy", "made-to-order", "Our Fan-Favorites"],
+}
+console.log(pizza);
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -42,8 +48,7 @@
     Use dot notation to access the value.
 */
 
-//CODE HERE
-
+console.log(pizza.popularity);
 
 /*
     Second, log the second tag in your pizza's
@@ -52,8 +57,7 @@
     get the value.
 */
 
-//CODE HERE
-
+console.log(pizza.tags[1]);
 
 /*
     Third, destructure the price off of the
@@ -62,8 +66,8 @@
     Print the value of your new price variable.
 */
 
-//CODE HERE
-
+let {price} = pizza;
+console.log(price);
 
 /*
     Fourth, and last, destructure the category
@@ -105,7 +109,7 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
 
 
@@ -149,6 +153,7 @@
 */
 
 //CODE HERE
+const filterByProperty = {prop}
 
 
 /*
