@@ -37,6 +37,9 @@ const cart = [
 //DJ's solution:
 const summedPrice = cart.reduce((acc,curr) => acc + curr.price, 0)
 console.log(summedPrice);
+
+console.log("----------------------------------------");
+
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
 
@@ -65,6 +68,9 @@ const calcFinalPrice = (cartTotal, couponValue, tax) =>{
 }
 
 console.log(calcFinalPrice(100,15,.05));
+
+console.log("----------------------------------------");
+
 //////////////////PROBLEM 3////////////////////
 /*  
     In this problem, you'll create a model for 
@@ -88,7 +94,16 @@ console.log(calcFinalPrice(100,15,.05));
 /*
     TEXT ANSWER HERE
 
+    The customer object will object that I will create will have the follwing properties listed:
+    "ID, first name, last name, gender, email, phone number, and residence". The "ID" is a key property as
+     it serves as an identifier or tag for each incoming/ new customer we get. Also it helps to avoid any 
+     confusion by differentiating between customers in the case they may share similar traits such as name. 
+     The names, email, and residence are string data types, which serve to be an extra way to contact the customer
+     alongside with thw cutomer's  phone number. The properties also serve a great way to sort out what could be the
+     customer's preference.
+
 */
+console.log("----------------------------------------");
 
 /*
     Now, create a customer object following your own
@@ -96,3 +111,27 @@ console.log(calcFinalPrice(100,15,.05));
 */
 
 //CODE HERE
+class Customer {
+    constructor(id, firstName, lastName, gender, email, phoneNumber, location) {
+      this.id = id;
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.gender = gender;
+      this.email = email;
+      this.phoneNumber = phoneNumber;
+      this.location = location;
+    }
+  }
+
+const IncomingCustomer = new Customer(
+    1,
+    "Zayvion",
+    "Amreael",
+    "Zayvion_was_here@gmail.com",
+    "Male",
+    123456789,
+    "Dallas, TX"
+);
+
+console.log(IncomingCustomer);
+console.log("----------------------------------------");
