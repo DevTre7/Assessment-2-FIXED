@@ -20,7 +20,17 @@
 */
 
 //CODE HERE
-class Employee {}
+class Employee {
+    constructor(name, shifts) {
+        this.name = name;
+        this.shifts = shifts;
+    }
+    getSchedule() {
+        console.log(`${this.name} works on ${this.shifts}`);
+    }
+}
+
+console.log("----------------------------------------");
 
 
 /*
@@ -34,6 +44,9 @@ class Employee {}
 */
 
 //CODE HERE
+const empOne = new Employee("jess", ["weekday  - mornings", "weekday - afternoons"]);
+
+console.log("----------------------------------------");
 
 /*
     Call the `getSchedule` method on the
@@ -41,6 +54,10 @@ class Employee {}
 */
 
 //CODE HERE
+empOne.getSchedule();
+console.log(empOne);
+
+console.log("----------------------------------------");
 
 
 /*
@@ -56,7 +73,11 @@ class Employee {}
 */
 
 //CODE HERE
+const empTwo = { ...empOne };
+empTwo.name = "Nick";
+console.log(empTwo);
 
+console.log("----------------------------------------");
 
 
 //////////////////PROBLEM 2////////////////////
@@ -84,6 +105,20 @@ class Employee {}
 
 //CODE HERE
 
+class Manager extends Employee {
+    constructor(name, shifts, employees = []) {
+      super(name, shifts);
+      this.employees = employees;
+    }
+    getEmployees() {
+      console.log(`${this.name} manages ${this.employees}`);
+    }
+    addEmployee(emp) {
+      this.employees.push(emp);
+    }
+  }
+  
+  console.log("----------------------------------------");
 
 
 /*
@@ -99,6 +134,10 @@ class Employee {}
 
 //CODE HERE
 
+const manager = new Manager("Winston", "weekday mornings, weekday afternoons", [
+    "CeCe",
+    "Schmidt",
+  ]);
 
 /*
     Call the `getEmployees` method on the
@@ -106,6 +145,10 @@ class Employee {}
 */
 
 //CODE HERE
+manager.getEmployees();
+console.log("----------------------------------------");
+
+
 
 /*
     Call the `addEmployee` method on the 
@@ -115,6 +158,11 @@ class Employee {}
 
 //CODE HERE 
 
+manager.addEmployee("Coach");
+
+console.log("----------------------------------------");
+
+
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 
@@ -122,3 +170,6 @@ class Employee {}
 */
 
 //CODE HERE
+manager.getEmployees();
+
+console.log("----------------------------------------");

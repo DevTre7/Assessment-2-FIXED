@@ -65,6 +65,8 @@ console.log("----------------------------------------");
 //CODE HERE
 let firstTicket = new Ticket("pizza, bread, and soda", "7:03 PM", 575);
 
+console.log("----------------------------------------");
+
 
 /*
     Call the `updateStatus` method on
@@ -74,3 +76,5 @@ let firstTicket = new Ticket("pizza, bread, and soda", "7:03 PM", 575);
 
 //CODE HERE
 firstTicket.updateStatus("cooking");
+console.log("----------------------------------------");
+
