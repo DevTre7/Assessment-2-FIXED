@@ -39,6 +39,8 @@ const pizza = {
     tags: ["gluten-free","organic cauliflower crust", "non-dairy", "made-to-order", "Our Fan-Favorites"],
 }
 console.log(pizza);
+console.log("------------------------------------------");
+
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -49,6 +51,7 @@ console.log(pizza);
 */
 
 console.log(pizza.popularity);
+console.log("------------------------------------------");
 
 /*
     Second, log the second tag in your pizza's
@@ -58,6 +61,8 @@ console.log(pizza.popularity);
 */
 
 console.log(pizza.tags[1]);
+console.log("------------------------------------------");
+
 
 /*
     Third, destructure the price off of the
@@ -68,6 +73,8 @@ console.log(pizza.tags[1]);
 
 let {price} = pizza;
 console.log(price);
+console.log("------------------------------------------");
+
 
 /*
     Fourth, and last, destructure the category
@@ -77,6 +84,9 @@ console.log(price);
 */
 
 //CODE HERE
+let {category} = pizza;
+console.log(category);
+console.log("------------------------------------------");
 
 
 //////////////////PROBLEM 3////////////////////
@@ -92,8 +102,52 @@ console.log(price);
 */
 
 //CODE HERE
+let foodArr = [
+    {
+        name: "Taco", 
+        price: 10,
+        category: "Appetizer",
+        popularity: 3,
+        Rating: 4,
+        tags: ["Party-Favorite","Spicy", "Savory", "HOT"],
+    },
+    {
+        name: "Homestyle Burger", 
+        price: 20,
+        category: "Main - Entree",
+        popularity: 7,
+        Rating: 5,
+        tags: ["Pickle","Grub-Time", "Fresh", "Tasty", "Classic"],
+    },
+    {
+        name: "Humungo Burrito", 
+        price: 23,
+        category: "Main - Entree",
+        popularity: 1,
+        Rating: 10,
+        tags: ["Sweet & Spicy","Corn", "Cilantro", "Flavorful", "New-Spin"],
+    },
+    {
+        name: "Tequila", 
+        price: 15,
+        category: "Drinks",
+        popularity: 4,
+        Rating: 5,
+        tags: ["Sweet & Sour","Agave", "Pineapple", "Lemon-Juice", "Refreshing"],
+    },
+    {
+        name: "Long Island Iced Tea", 
+        price: 17,
+        category: "Drinks",
+        popularity: 2,
+        Rating: 5,
+        tags: ["Vodka","Rum", "Ice", "Sweet & Bitter", "Traditonal"],
+    }
 
+]
 
+console.log(foodArr);
+console.log("------------------------------------------");
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -109,8 +163,20 @@ console.log(price);
 
 //CODE HERE
 
-const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+let food = foodArr;
 
+const foodChoice = (food) => {
+    return food.tags.includes("Classic")
+}
+
+
+console.log(foodChoice);
+console.log("------------------------------------------");
+
+const filteredFood = foodArr.filter(foodChoice)
+
+console.log(filteredFood);
+console.log("------------------------------------------");
 
 
 //////////////////PROBLEM 5////////////////////
@@ -155,6 +221,7 @@ const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 //CODE HERE
 const filterByProperty = {prop}
 
+console.log("------------------------------------------");
 
 /*
     Invoke the `filterByProperty` function passing
@@ -164,3 +231,5 @@ const filterByProperty = {prop}
 */
 
 //CODE HERE
+
+console.log("------------------------------------------");

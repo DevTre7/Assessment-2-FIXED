@@ -94,14 +94,16 @@ console.log("------------------------------------------");
 canWeDeliverTwo(12345);
 console.log("------------------------------------------");
 
-//DJ's alternative 
-const canWeDeliverThree = zip => {
-    const filteredZip = deliveryAreaZipCodes.filter(code > code === zip)
-                        //"If" expression                               "else" expression
-    filteredZip.length > 0 ? console.log("You're in the delivery zone!") : console.log("Sorry, we cannot deliver it to you. ");
-}
+// //DJ's alternative 
+// const canWeDeliverThree = zip => {
+//     const filteredZip = deliveryAreaZipCodes.filter(code > code === zip)
+//                         //"If" expression                               "else" expression
+//     filteredZip.length > 0 ? console.log("You're in the delivery zone!") : console.log("Sorry, we cannot deliver it to you. ");
+// }
 
-console.log(canWeDeliverThree(85205));
+// console.log(canWeDeliverThree(85205));
+
+
 //////////////////PROBLEM 3////////////////////
 /* 
     Below is an array of objects that have some
@@ -147,10 +149,11 @@ const discount = deals[0].title.replace("15% Off!", "10% Off!")
 newDeals1[0].title = discount;
 console.log(newDeals1);
 console.log("------------------------------------------");
-///DJ's solution:
 
-deals[1].desc = deals[1].desc.trim().replace("March", "April");
-console.log(de)
+
+///DJ's solution:
+// deals[1].desc = deals[1].desc.trim().replace("March", "April");
+// console.log(deals)
 /*
     The restaurant is going to continue its
     family deal for another month. 
@@ -164,10 +167,10 @@ console.log(de)
     to be displaying wrong on the live site.
 */
 
-////???????? Don't knmow why my replace() method is not working on the object array???!!!!
+////???????? Don't know why my replace() method is not working on the object array???!!!!
 
-console.log(newDeals1);
-const month = deals[7].desc.replace("March", "April");
-newDeals1[7].desc = month;
-console.log(newDeals1);
-console.log("------------------------------------------");
+// console.log(newDeals1);
+// const month = deals[7].desc.replace("March", "April");
+// newDeals1[7].desc = month;
+// console.log(newDeals1);
+// console.log("------------------------------------------");
